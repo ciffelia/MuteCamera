@@ -59,25 +59,4 @@ class MainActivity : AppCompatActivity() {
             adapter = AppRecyclerViewAdapter(cameraApps, preferences)
         }
     }
-
-    /*private fun printUsageEvent (event: UsageEvents.Event) {
-        val timestamp = event.timeStamp
-        val packageName = event.packageName
-
-        val eventType = when (event.eventType) {
-            UsageEvents.Event.ACTIVITY_RESUMED -> "ACTIVITY_RESUMED"
-            UsageEvents.Event.ACTIVITY_PAUSED -> "ACTIVITY_PAUSED"
-            UsageEvents.Event.ACTIVITY_STOPPED -> "ACTIVITY_STOPPED"
-
-            UsageEvents.Event.SCREEN_INTERACTIVE -> "SCREEN_INTERACTIVE"
-            UsageEvents.Event.SCREEN_NON_INTERACTIVE -> "SCREEN_NON_INTERACTIVE"
-
-            UsageEvents.Event.KEYGUARD_SHOWN -> "KEYGUARD_SHOWN"
-            UsageEvents.Event.KEYGUARD_HIDDEN -> "KEYGUARD_HIDDEN"
-
-            else -> event.eventType.toString()
-        }
-
-        Log.d("events", "[$eventType]@$timestamp: $packageName, ${event.className}")
-    }*/
 }
